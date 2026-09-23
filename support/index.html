@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Topped Off Support</title>
+<meta name="description" content="Help with Topped Off, the fuel log and MPG tracker for iPhone.">
+<style>
+  :root {
+    --bg: #F3F1EC; --card: #FFFFFF; --ink: #16171A; --muted: #5E5D57; --line: #DEDAD0; --accent: #A35400;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0F1011; --card: #191B1D; --ink: #F2EFE6; --muted: #A3A29B; --line: #2A2D30; --accent: #FFB547; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 34px; line-height: 1.15; margin: 0 0 6px; }
+  .date { color: var(--muted); margin: 0 0 28px; }
+  .summary {
+    background: var(--card); border: 1px solid var(--line); border-left: 4px solid var(--accent);
+    border-radius: 12px; padding: 18px 20px; margin-bottom: 32px;
+  }
+  .summary p { margin: 0; }
+  h2 { font-size: 20px; margin: 32px 0 8px; }
+  p, li { color: var(--ink); }
+  ul { padding-left: 22px; }
+  li { margin: 4px 0; }
+  a { color: var(--accent); }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Topped Off Support</h1>
+  <p class="date">Help with the app, and how to reach me</p>
+  <div class="summary">
+    <p><strong>Need a hand?</strong> Email <a href="mailto:svisnesky+toppedoff@gmail.com">svisnesky+toppedoff@gmail.com</a>. I read every message and usually reply within a couple of days.</p>
+  </div>
+
+  <h2>Importing from Fuelly</h2>
+  <p>On fuelly.com, open your vehicle and choose Export to download a CSV. Save it to the Files app, then in Topped Off go to
+  More &gt; Import from Fuelly and pick the file. You'll see every row before anything is added: duplicates and broken rows
+  start unchecked, and nothing is saved until you tap Import.</p>
+
+  <h2>How MPG is worked out</h2>
+  <p>MPG is calculated on full fill-ups: the miles since your last full fill divided by all the gallons pumped since then.
+  A partial fill doesn't get its own MPG; its gallons roll into the next full tank. This is the same full-to-full method
+  Fuelly uses, so an imported history carries straight over.</p>
+
+  <h2>I forgot to log a fill-up</h2>
+  <p>On the next fill-up, turn on <em>Missed logging the previous fill</em>. MPG restarts from that fill so one missing
+  entry doesn't produce a wildly wrong tank.</p>
+
+  <h2>Logging with Siri</h2>
+  <p>With Topped Off Pro, say "Log fuel in Topped Off" and answer the odometer, gallons and total. Please only do this at the
+  pump or once you're parked, never while driving.</p>
+
+  <h2>Restoring your purchase</h2>
+  <p>Topped Off Pro is a one-time purchase tied to your Apple ID and shared with your Family Sharing group. On a new phone,
+  go to More &gt; Restore purchase.</p>
+
+  <h2>Backing up your log</h2>
+  <p>Your log is stored only on your iPhone and is included in your normal iCloud or computer backups. To keep your own copy,
+  use More &gt; Export CSV. Deleting the app deletes its data, so export first if you might want it back.</p>
+
+  <footer>Topped Off is made by Stan Visnesky. <a href="../privacy/">Privacy</a> · <a href="../support/">Support</a>. Fuelly is a trademark of its owner; Topped Off is not affiliated with or endorsed by Fuelly.</footer>
+</main>
+</body>
+</html>
